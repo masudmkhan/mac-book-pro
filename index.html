@@ -33,15 +33,15 @@
             <!-- Macbook select memory -->
             <div class="macbook-memory">
                 <h3>Memory</h3>
-                <button id="8gb-memory-btn" class="specification-btn">8GB unified memory</button>
-                <button id="16gb-memory-btn" class="specification-btn">16GB unified memory</button>
+                <button id="memory-8gb-btn" class="specification-btn">8GB unified memory</button>
+                <button id="memory-16gb-btn" class="specification-btn">16GB unified memory</button>
             </div>
             <!-- Macbook select storage -->
             <div class="macbook-storage">
                 <h3>Storage</h3>
-                <button id="256gb-ssd-btn" class="specification-btn">256GB SSD storage</button>
-                <button id="512gb-ssd-btn" class="specification-btn">512GB SSD storage</button>
-                <button id="1tb-ssd-btn" class="specification-btn">1TB SSD storage</button>
+                <button id="ssd-256gb-btn" class="specification-btn">256GB SSD storage</button>
+                <button id="ssd-512gb-btn" class="specification-btn">512GB SSD storage</button>
+                <button id="ssd-1tb-btn" class="specification-btn">1TB SSD storage</button>
             </div>
             <!-- Macbook select delivery -->
             <div class="macbook-delivery">
@@ -53,23 +53,23 @@
             <div class="cost-calculation">
                 <div class="costs">
                     <div>Base Price</div>
-                    <div>$1299</div>
+                    <div>$<span id="base-price">1299</span></div>
                 </div>
                 <div class="costs">
                     <div>Extra Memory Cost</div>
-                    <div>$0</div>
+                    <div>$<span id="extra-memory-cost">0</span></div>
                 </div>
                 <div class="costs">
                     <div>Extra Storage Cost</div>
-                    <div>$0</div>
+                    <div>$<span id="extra-storage-cost">0</span></div>
                 </div>
                 <div id="delivery" class="costs">
                     <div>Delivery Charge</div>
-                    <div>$0</div>
+                    <div>$<span id="delivery-charge">0</span></div>
                 </div>
                 <div class="total-cost">
                     <div>Total Price</div>
-                    <div>$1299</div>
+                    <div>$<span id="total-price">1299</span></div>
                 </div>
             </div>
             <!-- Add Promo Code -->
@@ -77,12 +77,14 @@
                 <p>Add Promo Code</p>
                 <input id="promo-input" class="promo-input" type="text">
                 <button id="apply-promo" class="apply-promo">Apply</button>
+                <p id="promo-accepted">Promo Code Accepted!</p>
             </div>
         </section>
     </main>
     <footer>
         <h1>Total: $<span id="final-total">1299</span></h1>
     </footer>
+    <!-- js connection -->
     <script src="js/app.js"></script>
 </body>
 

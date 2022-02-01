@@ -92,9 +92,14 @@ main{
     border: none;
     cursor: pointer;
 }
+#promo-accepted{
+    color: green;
+    display: none;
+}
 footer{
     text-align: center;
     border-top: 1px solid rgba(155, 154, 154, 0.384);
     width: 1230px;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
